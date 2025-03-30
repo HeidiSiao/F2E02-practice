@@ -1,0 +1,16 @@
+/* color 超連結有預設，額外設定顏色繼承父元素的文字顏色 */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #292929;
+}
+
+
+
+img {
+  display: block;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* 垂直對齊 */
+  /* vertical-align: middle; */
+}

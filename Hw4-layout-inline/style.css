@@ -1,0 +1,46 @@
+@import './reset.css';
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+}
+
+
+
+.logo-link {
+  max-width: 90px;
+  height: 45px;
+}
+
+.logo-link img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.flex-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  /* padding-top: 35px; */
+}
+
+.nav-item {
+  padding-inline: 15px;
+  
+}
+
+.btn-booking {
+  background-color: #DA3643;
+  color: #ffffff;
+  display: inline-flex;
+  border-radius: 30px;
+}

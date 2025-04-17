@@ -258,7 +258,7 @@ a {
 
 .promote-bg {
   background-image: url('https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
 }

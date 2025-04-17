@@ -270,13 +270,13 @@ a {
 
 .promote-bg {
   background-image: url('https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .promote-section {
-  padding: 35px 10px 0px 10px;
+  padding: 35px 10px 40px 10px;
   border-radius: 20px;
   background-color: #fff;
   width: 50%;
@@ -334,8 +334,8 @@ select {
   align-self: flex-start;
   justify-content: space-between;
   border: 1px solid #ddd;
-  
-
+  background-color: #f9f9f9;
+  border-radius: 3px;
 }
 
 
@@ -357,15 +357,17 @@ select {
 
 .robot-text {
   font-size: 10px;
+  margin-top: 5px;
   
+}
+
+.fs-2 {
+  font-size: 8px;
 }
 
 
 
 /* layout 可重用類 */
-/* .fs-6 {
-  font-size: 24px;
-} */
 
 
 
@@ -375,9 +377,15 @@ select {
 }
 
 /* 20px */
-.fs-6 {
+.fs-5 {
   font-size: 1.25rem;
 }
+
+/* 24px */
+.fs-6 {
+  font-size: 1.5rem;
+}
+
 
 /* 28px */
 .fs-7 {
@@ -387,20 +395,22 @@ select {
 
 .fs-8 {
   font-size: 2rem;
+  font-weight: 700;
 }
 
-.mb-spacing-s {
-  margin-bottom: 10px;
+
+.gap-2 {
+  gap: 20px;
 }
 
-.mb-spacing-m {
-  margin-bottom:40px;
+.gap-4{
+  gap: 40px;
+
 }
 
-.pt-spacing-s {
-  padding-top: 20px;
+.w-100 {
+  width: 100%;
 }
-
 
 .pt-4 {
   padding-top: 40px;
@@ -441,11 +451,11 @@ select {
 
 
 
-.row-sb-c {
- display: flex;
- justify-content: space-between;
- align-content: center;
-}
+.row-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
 .col-c-c {
   display: flex;
@@ -459,11 +469,6 @@ select {
   align-items: center;
 }
 
-.flex-row-jcc {
-  display: flex;
-  justify-content: center;
-}
-
 
 .flex-col {
   display: flex;
@@ -475,6 +480,7 @@ select {
   font-weight: 700;
   padding: 12px 20px;
   letter-spacing: 1px;
+  line-height: 1;
 }
 
 .btn-action {
@@ -483,10 +489,32 @@ select {
   background-color: #064C8B;
 }
 
+.btn-more {
+  font-weight: 700;
+  padding: 20px 30px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background-color: #064C8B;
+  line-height: 1;
+}
+
+.btn-submit {
+  background-color: #EC6337;
+  border-radius: 20px;
+  color: #FFFFFF; 
+  min-width: 120px;
+}
+
+
 
 .primary-color {
   color: #FF6237;
 }
+
+.primary-color-bg {
+  background-color: #FF6237;
+}
+
 
 .secondary-color {
   color: #064C8B;

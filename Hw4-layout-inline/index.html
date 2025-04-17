@@ -241,11 +241,13 @@
   <!-- 產品推廣 promote  -->
    <section class="promote-bg pt-4">
     <div class="container">
+      <!-- 引言 -->
       <q class="quote keep-line mb-4"> inline 是目前世界上最好用的
         訂候位控管、帶位工具及顧客管理系統 </q>
-      <pre class="fs-6 ta-c mt-1 mb-4">- 許禮麟 / 金田餐飲集團總經理</pre>
+      <pre class="fs-5 ta-c mt-1 mb-4">- 許禮麟 / 金田餐飲集團總經理</pre>
 
-      <div class="promote-section ">
+      <div class="promote-section mb-4">
+        <!-- 表單前言 -->
         <div class="mb-4">
           <p class="col-c-c mb-1">
             <span class="fs-7 secondary-color mb-2">Hi 餐廳老闆</span>
@@ -257,7 +259,8 @@
           <p class="keep-line ta-c">現在申請可享 14 天免費試用＋專人導入教學
           快讓 inline app 成為您餐廳的最佳助手！</p>
         </div>
-        <form class="form-contact col-c-c" action="#" method="post">
+        <!-- 表單欄位 -->
+        <form class="form-contact col-c-c " action="#" method="post">
           <label for="">聯絡人姓名（必填）</label>
           <input type="text" placeholder="e.g. Mayer" required>
 
@@ -289,12 +292,6 @@
               <option value="">日本</option>
             </select>
           </div> 
-
-
-         
-         
-
-
           <label for="">您餐廳的所在地址（必填）</label>
           <input type="text" placeholder="" required>
 
@@ -313,41 +310,60 @@
               <option value="">兩者皆有興趣</option>
             </select>
           </div> 
-
           <label for="">您是從哪裡獲得inline的資訊？（必填）</label>
           <div class="select-icon-wrap">  
             <select class="ta-c mb-1" name="city" id="city">
               <option value="" disabled selected hidden required>-請選擇-</option>
-              <option value="">Opentable</option>
+              <option value="">Open table</option>
               <option value="">LinkedIn</option>
               <option value="">線下活動</option>
               <option value="">inline 專人電洽</option>
             </select>
           </div>
-          
-          <div class="robot flex-row-aic">
+          <!-- 機器人驗證 -->
+          <div class="robot flex-row-aic mb-4">
             <div class="flex-row-aic">
               <input type="checkbox">
               <label for="">I'm not a robot</label>  
             </div>
-            
             <div class="col-c-c mt-1 mb-1">
               <img class="robot-img" width="32px" height="32px" src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt=""> 
                 <span class="robot-text">reCAPTCHA</span>
-                <span class="robot-text">Privacy - Terms</span>  
+                <span class="fs-2">Privacy - Terms</span>  
             </div>
-          
           </div>
-
-
-
-
-          
-
-
+          <!-- 送出按鈕 -->
+           <button class="btn btn-submit mb-1" type="submit">送出</button>
+           <small class="fs-2 mb-1">此表單為提供餐廳試用系統，請勿在此進行餐廳線上訂位，如需訂位請直接聯繫餐廳</small>
         </form>
       </div>
     </div>
+    <div class="container">
+      <h2 class="fs-8 ta-c mt-4 mb-1">inline 還有什麼強大之處？</h2>
+      <div class="ta-c"><a class="btn-more fs-5" target="_blank" href="https://inline.app/zh/why-inline">點擊了解更多</a>
+      </div>
+
+      <div class="row-c-c gap-4">
+        <div class="call-info col-c-c gap-2 w-100">
+          <p class="fs-5">直接電話聯繫我們</p>
+          
+            <span>電話客服時間：</span>
+            <span> 星期一 ~ 星期五 10:00 ~ 19:00</span>
+        
+          <a class="fs-6" href="tel:0223223414">+886 – 2 – 2322 – 3414</a>        
+        </div>
+        <div class="try-info col-c-c gap-2 w-100">
+          <p class="fs-5">立即免費試用 inline</p>
+          
+            <span>免費前兩週試用期，歡迎填寫表單聯絡我們，</span>
+            <span>我們會有專人盡快回覆您！</span>
+        
+          <a target="_blank" class="btn btn-action primary-color-bg" href="https://inline.app/zh/contact">立即免費試用</a>        
+        </div>
+
+      </div>
+    </div>
+
     
    </section>
 

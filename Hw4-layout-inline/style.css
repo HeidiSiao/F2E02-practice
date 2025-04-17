@@ -361,20 +361,52 @@ select {
   
 }
 
-.fs-2 {
-  font-size: 8px;
+
+
+/* footer */
+
+.location-info {
+  margin-top: 25px;
 }
+
+.location-info span {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.location-info address {
+  font-style: normal;
+}
+
+/* col No.2 */
+.sitemap-list li, .lang-list li {
+  border-bottom: 1px solid #666666;
+  padding-block: 10px;
+  padding-right: 10px;
+}
+
+/* col No.3 */
+.contact-us-info, .pr-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+
+
+
 
 
 
 /* layout 可重用類 */
-
-
-
-
 .block {
   display: block;
 }
+
+.fs-2 {
+  font-size: 0.5rem;
+}
+
 
 /* 20px */
 .fs-5 {
@@ -397,6 +429,7 @@ select {
   font-size: 2rem;
   font-weight: 700;
 }
+
 
 
 .gap-2 {
@@ -449,7 +482,9 @@ select {
   text-align: center;
 }
 
-
+.flex-row {
+  display: flex;
+}
 
 .row-c-c {
   display: flex;
@@ -515,6 +550,10 @@ select {
   background-color: #FF6237;
 }
 
+.dark-bg {
+  color: #e3e6ed;
+  background-color: #252932;
+}
 
 .secondary-color {
   color: #064C8B;

@@ -1,0 +1,318 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Noto+Sans+TC:wght@100..900&display=swap');
+* {
+  /* outline: 2px solid gold; */
+}
+
+body {
+  font-family: 'Gudea', 'Heiti', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+}
+
+:root {
+
+  /* font-size */
+  font-size: 16px;
+  --title-h2: 2rem; /* 30px */
+  --fs-xs: 0.75rem; /* 12px */
+  --fs-s: 0.875rem; /* 14px */
+  --fs-1: 1rem;
+  --fs-2: 1.125rem; /* 18px */
+
+  /* color */
+  --hint-color: #0c9251;
+  --primary-bg-color: #11d073;
+
+
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0  auto;
+}
+
+
+/* header 上半部 */
+.nav-bar {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 15px;
+
+  
+}
+
+.logo-link {
+  width: 191px;
+  height: 22px;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto;
+}
+
+.tag {
+  background-color: #f1f7f8;
+  border-radius: 15px;
+  font-size: var(--fs-xs);
+  line-height: 30px;
+  margin-left: 25px;
+}
+
+.tag a {
+  text-decoration: underline;
+  border-right: 1px solid #bdbdbd;
+  padding-right: 10px;
+}
+
+.warn-icon {
+  color: var(--hint-color);
+  background: url('https://static.cdn-eztravel.com/www/home/images/caution-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 0;
+  padding: 0 8px 0 30px;
+  margin-left: 15px;
+  
+}
+.close-icon{
+  display: inline-block;
+  width: 34px;
+  height: 30px;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.login-btn {
+  background: url('	https://static.cdn-eztravel.com/www/api/8a392ac/images/header-login-user.svg');
+  background-repeat: no-repeat;
+  background-size: contain;  /* 讓圖片等比例縮放，保持比例 */
+  padding-left: 18px;
+}
+
+.nav-items-group {
+  font-size: var(--fs-s);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.nav-items-group li:nth-of-type(3) {
+  color: #f1f7f8;
+  background-color: var( --primary-bg-color);
+  border-radius: 15px;
+  padding-block: 5px;
+  padding-inline: 10px;
+}
+
+.nav-items-group li:last-child a {
+  color: var( --hint-color);
+  font-weight: bold;
+  }
+
+
+
+/* header 下半部 */
+
+nav {
+  border-top: 1px solid #e8e8e8;
+}
+
+.menu {
+  font-size: 15px;
+  padding-block: 12px;
+  padding-inline: 30px;
+}
+
+.menu-group li:nth-of-type(1) {
+  margin-left: -30px;
+}
+
+.menu-link a{
+  padding-block: 6px;
+  font-size: var(--fs-s);
+  color: #bdbdbd;
+}
+.menu-link a:first-child {
+  margin-right: 20px;
+}
+
+/* main */
+.main-bg  {
+  background: url('https://static.cdn-eztravel.com/assets/images/hpimg/banner/hp.jpg');
+  height: 360px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title {
+  color: #f1f7f8;
+  font-size: var(--title-h2);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* 
+.main-wrap {
+  margin-top: -270px;
+  position: relative;
+  margin: -210px auto 30px;;
+} */
+
+.main-info {
+ position: relative;
+ top: 250px;
+}
+
+.banner-section{
+ 
+ position: absolute;
+ bottom: -50%;
+ transform: translateY(50%);
+  
+  background-color: #ffff;
+
+}
+
+/* .bgc-color {
+  background-color: #ffff;
+} */
+/* booking-section */
+.booking-section {
+  background-color: #ffff;
+  padding-block: 16px;
+  padding-inline: 30px;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
+  border-radius: 10px;
+}
+
+.booking-section-head {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.booking-section-head li {
+  width: 157px;
+  text-align: center;
+}
+
+.trip-checked {
+  font-size: var(--fs-s);
+  margin-bottom: 12px;
+}
+
+.ad-tag {
+  font-weight: bold;
+  font-size: var(--fs-xs);
+  background-color: #f77;
+  color: #ffff;
+  margin-right: 10px;
+  padding: 2px 2px 2px 3px;
+  position: relative;
+  border-radius: 3px;
+  
+}
+
+.ad-tag::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid #f77;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  right: -10px;
+  
+  
+}
+
+.trip-details{
+  border: 1px solid #11d073;
+  border-radius: 10px;
+}
+.trip-details div {
+  font-size: var(--fs-s);
+  padding-block: 8px;
+  padding-inline: 19px;
+}
+
+.trip-details div span {
+  color: grey;
+}
+
+
+.trip-prefer {
+  font-size: var(--fs-s);
+  padding-top: 12px;
+
+
+}
+
+.search-btn {
+  font-size: var(--fs-2);
+  color: #f1f7f8;
+  background-color: var(--primary-bg-color);
+  max-height: 60px;
+  min-width: 180px;
+  padding: 7px;
+  border-radius: 10px;
+
+}
+
+.banner-section {
+  background-color: #f1f7f8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+
+
+/* utils */
+.w-100 {
+  width: 100%
+}
+
+.gap-s {
+  gap: 15px;
+}
+
+.gap-sm {
+  gap: 20px;
+}
+
+.pd-inner-s {
+  padding-inline: 20px;
+}
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
